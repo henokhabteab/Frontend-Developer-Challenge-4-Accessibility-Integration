@@ -1,0 +1,25 @@
+/* styles.css */
+.accessibility-icon {
+  /* Add your styling for the accessibility icon */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.accessibility-window {
+  /* Add your styling for the accessibility window */
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  z-index: 1;
+  display: none;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="csrf-token"
+      content="CXovaJfMQOte0iPL3gbpKn55RiPLUZTo2B2XNSlF"
+    />
+    <title>Accessibility</title>
+    <meta property="og:locale" content="en_US" />
+
+    <link
+      rel="shortcut icon"
+      href="https://d3f06rtlkr354b.cloudfront.net/public/uploads/settings/favicon.ico"
+    />
+    <link
+      rel="icon"
+      href="https://d3f06rtlkr354b.cloudfront.net/public/uploads/settings/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/adminassets/vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/style.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/jquery.toast.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/css/intlTelInput.css"
+      integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.css"
+      rel="stylesheet"
+    />
+    <!-- dialog flow css -->
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dialog-flow.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/pnotify.custom.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Stripe Stylesheet -->
+    <link
+      href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/stripe.css"
+      rel="stylesheet"
+    />
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/popper.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/sweetalert.min.js"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/js/intlTelInput.min.js"
+      integrity="sha512-hpJ6J4jGqnovQ5g1J39VtNq1/UPsaFjjR6tuCVVkKtFIx8Uy4GeixgIxHPSG72lRUYx1xg/Em+dsqxvKNwyrSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/adminassets/vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/jquery.toast.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/pnotify.custom.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5fe1f93b25.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <div class="position-relative">
+    <div class="position-absolute">
+      <div id="all-notifications-container" class="position-fixed"></div>
+    </div>
+  </div>
+
+  <body class="login-page register-page">
+    <div
+      id="accessibilityIcon"
+      class="accessibility-icon"
+      onclick="toggleAccessibilityWindow()"
+    >
+      <!-- Icon or Text for Accessibility -->
+      <i class="fa-sharp fa-solid fa-wheelchair fa-2x"></i>
+    </div>
+
+    <div id="accessibilityWindow" class="accessibility-window">
+      <div class="adjustment-section">
+        <h2>How can we help?</h2>
+        <button class="btn btn-secondary" onclick="changePosition()">
+          Change Position
+        </button>
+        <button class="btn btn-secondary" onclick="toggleButtons()">
+          Toggle ON/OFF
+        </button>
+      </div>
+
+      <div class="adjustment-section">
+        <h2>Language</h2>
+        <button class="btn btn-secondary" onclick="changeLanguage()">
+          Change Language
+        </button>
+        <button class="btn btn-secondary" onclick="resetSettings()">
+          Reset Settings
+        </button>
+      </div>
+
+      <div class="adjustment-section">
+        <h2>Search</h2>
+        <input
+          type="text"
+          placeholder="Search..."
+          oninput="searchFieldInput(this.value)"
+        />
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/5fe1f93b25.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
